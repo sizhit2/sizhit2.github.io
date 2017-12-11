@@ -2,6 +2,16 @@
 <head>
 <title>Sizhi Tan</title>
  <link href = "style.css" rel ="stylesheet" type ="text/css">  
+    <style type = "text/css">
+        form{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width:300px;
+            border: 3px solid #73AD21;
+            color: white;
+        }
+    </style>
     
 </head>
 <body>
@@ -23,12 +33,29 @@
              <h1> Welcome To Sizhi's Website.</h1>  
                 
                     <div class="button">
-                        <a href="" class=""https://github.com/sizhit2">See Github</a>
-                        <a href="" class ="btn btn-two">Explore More</a>
+                        <a href="https://github.com/sizhit2" 
+                           title = "See Github"
+                           target = "_blank" class="btn btn-one">See Github</a>
+                        <a href="Resume%20Assignment.pdf"
+                           title = "See Resume"
+                           target = "_blank" class ="btn btn-two">See Resume</a>
                         </div>
                 </div>
-            
-        
+            <form method= "post" action="likeable.pho">
+                name: <input type = "text" id = "name">
+                <br>
+                Please rate this website:
+                <select name= "likeable">
+                    <option value = "100" selected = "selected"> 100% perfect</option>
+                    <option value = "duplicate"> Flawless </option>
+                    <option value = "genius"> Genius!!!</option>
+                
+                </select>
+                <br>
+                Give me some useful feedback:
+                feedback: <input type = "text" id= "feedback">
+                
+            </form>
         
         </header>
     
